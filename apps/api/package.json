@@ -17,12 +17,23 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "lint:format": "bunx @biomejs/biome format --write .",
+    "lint:fix": "bunx @biomejs/biome check --apply .",
+    "lint:check": "bunx @biomejs/biome check .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@repo/db": "*",
+    "biome": "^0.3.3",
+    "class-validator": "^0.14.1",
+    "cloudinary": "^2.4.0",
+    "commitlint": "^19.4.0",
+    "husky": "^9.1.4",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   },
