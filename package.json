@@ -1,0 +1,19 @@
+{
+  "name": "sev",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.0.12"
+  },
+  "scripts": {
+    "dev": "turbo run dev"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "packageManager": "npm@8.19.2"
+}
