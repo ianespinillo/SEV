@@ -1,0 +1,45 @@
+p
+{
+    width: 60ch;
+}
+
+section{
+    min-height: 100vh;
+
+}
+
+
+@media (min-width: 300px) {}
+
+@media (min-width: 640px) {
+    .text-card
+    {
+        width: 15ch;
+            
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+    .text-card
+    {
+        width: 45ch;
+        padding-right: 3px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .min-height-section {
+        min-height: 100vh;
+    }
+
+    p {
+        font-size: 20px;
+        width: 90ch;
+    }
+}

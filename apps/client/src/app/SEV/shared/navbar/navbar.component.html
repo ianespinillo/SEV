@@ -1,0 +1,28 @@
+<header class="flex gap-x-24  items-center justify-center mt-2">
+  <h3 class="">SEV</h3>
+
+  <div class="cont-menu">
+    <button mat-button class="menu" [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/']">Seguridad</button>
+      <button mat-menu-item  [routerLink]="['educacion']">Educacion</button>
+      <button mat-menu-item  [routerLink]="['conscientizacion']">Conscientizacion</button>
+      <!-- <button mat-button [routerLink]="['noticias']">Noticias</button> -->
+      <button mat-menu-item  [routerLink]="['aboutUs']">¿Que es SEV?</button>
+      <button mat-menu-item [routerLink]="['enviarPregunta']">Envia
+        una pregunta</button>
+    </mat-menu>
+  </div>
+
+
+
+  <nav class="flex items-center justify-center gap-2">
+    <button mat-button [routerLink]="['/']">Seguridad</button>
+    <button mat-button [routerLink]="['educacion']">Educacion</button>
+    <button mat-button [routerLink]="['conscientizacion']">Conscientizacion</button>
+    <!-- <button mat-button [routerLink]="['noticias']">Noticias</button> -->
+    <button mat-button [routerLink]="['aboutUs']">¿Que es SEV?</button>
+    <button matBadge="!" matBadgeSize="large" class="demo-section" mat-button [routerLink]="['enviarPregunta']">Envia
+      una pregunta</button>
+  </nav>  
+</header>
