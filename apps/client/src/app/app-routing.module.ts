@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'SEV', loadChildren: () => import('./SEV/sev.module').then(m => m.SevModule) },
+  {path: 'SEV', children:
+    []
+  },
   {
     path: '',
     redirectTo: 'SEV',
