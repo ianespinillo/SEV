@@ -9,10 +9,10 @@ import {
   isFakeTouchstartFromScreenReader
 } from "./chunk-SSP2OESP.js";
 import "./chunk-46GDQMB7.js";
+import "./chunk-NAN5ZF7F.js";
 import {
   Directionality
 } from "./chunk-A63MQ3O4.js";
-import "./chunk-NAN5ZF7F.js";
 import {
   coerceArray,
   coerceElement,
