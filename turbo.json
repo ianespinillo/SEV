@@ -2,11 +2,30 @@
     "$schema": "https://turbo.build/schema.json",
     "tasks":{
         "dev": {
+            "cache": false,
+            "dependsOn": ["^db:generate"]
+        },
+        "db:push": {
+            "outputs": []
+        },
+        "db:generate": {
             "cache": false
         },
         "build": {
-            "dependsOn": ["^build"],
+            "dependsOn": ["^build", "^db:generate"],
             "outputs": ["dist/**"]
+        },
+        "lint:check":{
+            "cache": false
+        },
+        "lint:fix":{
+            "cache": false
+        },
+        "lint:format":{
+            "cache": false
+        },
+        "test": {
+            "cache": false
         }
     }
 }

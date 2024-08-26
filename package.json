@@ -7,13 +7,26 @@
     "turbo": "^2.0.12"
   },
   "scripts": {
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "db:push": "turbo run db:push",
+    "db:generate": "turbo run db:generate",
+    "lint:check": "turbo run lint:check",
+    "lint:fix": "turbo run lint:fix",
+    "lint:format": "turbo run lint:format",
+    "test": "turbo run test"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
-  "packageManager": "npm@8.19.2"
+  "packageManager": "npm@8.19.2",
+  "dependencies": {
+    "biome": "^0.3.3",
+    "commitlint": "^19.4.0",
+    "husky": "^9.1.4"
+  }
 }
