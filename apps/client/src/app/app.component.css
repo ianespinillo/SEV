@@ -1,0 +1,35 @@
+.mat-toolbar {
+    padding: 0 16px;
+  }
+  
+  .mat-sidenav-container {
+    height: 100vh;
+  }
+  
+  .mat-sidenav {
+    width: 250px;
+  }
+  
+  .mat-nav-list a {
+    color: white;
+  }
+  
+  .mat-nav-list a:hover {
+    background-color: #333;
+  }
+  
+  .mat-sidenav-content {
+    padding: 20px;
+  }
+  
+  .mat-icon-button {
+    margin-left: auto;
+  }
+  
+  /* Hide the navigation bar on small screens */
+  @media (max-width: 767px) {
+    .mat-toolbar .md\:hidden {
+      display: none;
+    }
+  }
+  

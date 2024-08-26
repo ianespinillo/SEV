@@ -1,10 +1,26 @@
 <mat-toolbar class="bg-gray-800 text-white">
-  <div class="flex items-center w-full max-w-screen-lg mx-auto">
-    <mat-toolbar-row class="w-full">
-
-      <button mat-button [routerLink]="['/']">Home</button>
-      <button mat-button [routerLink]="['/noticias']">Noticias</button>
-      <button mat-button [routerLink]="['/SobreSev']">Sobre Sev</button>
-    </mat-toolbar-row>
+  <button mat-icon-button (click)="sidenav.toggle()" class="mr-2 md:hidden">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h1 class="text-3xl font-bold mb-4 flex-grow">
+    <a href="/" class="text-blue-400">SEV</a>
+  </h1>
+  <div class="hidden md:flex flex-grow justify-end">
+    <button mat-button [routerLink]="['/']">Home</button>
+    <button mat-button [routerLink]="['/noticias']">Noticias</button>
+    <button mat-button [routerLink]="['/SobreSev']">Sobre SEV</button>
   </div>
 </mat-toolbar>
+
+<mat-sidenav-container class="md:hidden">
+  <mat-sidenav #sidenav mode="over" class="bg-gray-800 text-white">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/']">Home</a>
+      <a mat-list-item [routerLink]="['/noticias']">Noticias</a>
+      <a mat-list-item [routerLink]="['/SobreSev']">Sobre SEV</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
