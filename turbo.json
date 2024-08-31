@@ -18,13 +18,14 @@
         "lint:check":{
             "cache": false
         },
-        "lint:fix":{
-            "cache": false
-        },
+        "lint:fix":{},
         "lint:format":{
             "cache": false
         },
         "test": {
+            "cache": false
+        },
+        "db-seed": {
             "cache": false
         }
     }
