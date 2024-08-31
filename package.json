@@ -11,6 +11,7 @@
     "build": "turbo run build",
     "db:push": "turbo run db:push",
     "db:generate": "turbo run db:generate",
+    "db-seed": "turbo run db-seed",
     "lint:check": "turbo run lint:check",
     "lint:fix": "turbo run lint:fix",
     "lint:format": "turbo run lint:format",
@@ -23,9 +24,8 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "npm@8.19.2",
-  "dependencies": {
-    "biome": "^0.3.3",
+  "packageManager": "pnpm@9.7.1",
+  "dependencies": { 
     "commitlint": "^19.4.0",
     "husky": "^9.1.4"
   }

@@ -1,0 +1,9 @@
+
+> api@0.0.1 lint:fix
+> bunx @biomejs/biome check --apply .
+
+error: Script not found "@biomejs/biome"
+npm ERR! Lifecycle script `lint:fix` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: api@0.0.1 
+npm ERR!   at location: C:\Users\Ian\Desktop\SEV\apps\api 
