@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  virtec:
+    image: postgres:14-alpine
+    container_name: SEV
+    restart: always
+    environment:
+      POSTGRES_ROOT_PASSWORD: sevweb_password
+      POSTGRES_DB: sevweb_dev_db
+      POSTGRES_USER: sevweb_user
+      POSTGRES_PASSWORD: sevweb_password
+    ports:
+      - "5436:5432"
+    volumes:
+      - sevweb_pg_data:/var/lib/pg
+
+volumes:
+  sevweb_pg_data:
