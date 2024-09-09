@@ -1,0 +1,15 @@
+
+> @repo/db@1.0.0 db:push C:\Users\e2559\Documents\GitHub\SEV\packages\database
+> prisma db push
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "sevweb_dev_db", schema "public" at "localhost:5436"
+
+Your database is now in sync with your Prisma schema. Done in 367ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v5.18.0) to .\..\..\node_modules\.pnpm\@prisma+client
+@5.18.0_prisma@5.18.0\node_modules\@prisma\client in 86ms
+

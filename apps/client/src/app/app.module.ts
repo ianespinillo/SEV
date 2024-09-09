@@ -12,6 +12,11 @@ import { NavBarComponent } from './SEV/components/navBar/navBar.component';
 import { NoticiasComponent } from './SEV/pages/Noticias/Noticias.component';
 import { CardNoticiaComponent } from './SEV/components/card-noticia/card-noticia.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { SignalCard } from './SEV/components/signal/signal.component';
+import { ManualSeñalesComponent } from './SEV/pages/ManualSeñales/ManualSeñales.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,15 +24,20 @@ import { CardNoticiaComponent } from './SEV/components/card-noticia/card-noticia
     HomePageComponent,
     NavBarComponent,
     NoticiasComponent,
-    CardNoticiaComponent
+    CardNoticiaComponent,
+    ManualSeñalesComponent,
+    SignalCard
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
+
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    SignalCard
   ],
 
   providers: [
