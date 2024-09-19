@@ -13,10 +13,9 @@ import {
   PortalModule,
   TemplatePortal,
   TemplatePortalDirective
-} from "./chunk-D4O6GKBY.js";
-import "./chunk-EJCTGTND.js";
-import "./chunk-IEW3K6TA.js";
-import "./chunk-X7BSUXNY.js";
+} from "./chunk-FWP72GYV.js";
+import "./chunk-WVLOWA2J.js";
+import "./chunk-I2NUWGR4.js";
 export {
   BasePortalHost,
   BasePortalOutlet,

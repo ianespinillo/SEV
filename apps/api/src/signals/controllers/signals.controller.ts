@@ -21,9 +21,13 @@ export class SignalsController {
 	@Get('')
 	async getAll(): Promise<Signals[]> {
 		return this.service.getAll();
-	}
+	}s
 	@Get(':id')
 	async getById(@Param('id', ParseIntPipe) id: number): Promise<Signals> {
 		return this.service.getById(id);
+	}
+	@Get('/cat/:categoryId')
+	async getByCategory(@Param('categoryId', ParseIntPipe) categoryId: number): Promise<Signals[]> {
+		return await this.service.filterByCategoryId(categoryId)
 	}
 }
