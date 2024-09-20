@@ -4,7 +4,7 @@ import { signals } from "../src/common/signals";
 
 const prisma = new PrismaClient();
 async function main() {
-    for(let category of Object.keys(categories)) {
+    for (let category of Object.keys(categories)) {
         await prisma.category.create({
             data: {
                 name: category
@@ -12,11 +12,11 @@ async function main() {
         })
     }
 
-    for(let signal of Object.values(signals)) {
+    for (let signal of Object.values(signals)) {
         await prisma.signals.create({
             data: {
                 name: signal.nombre,
-                description: signal.nombre,
+                description: signal.descripcion,
                 image: signal.imagen,
                 category_id: signal.idCategoria
             }
@@ -25,5 +25,5 @@ async function main() {
 }
 
 main()
-.then(() => console.log('Db seeded'))
-.catch(e => console.error(e))
+    .then(() => console.log('Db seeded'))
+    .catch(e => console.error(e))

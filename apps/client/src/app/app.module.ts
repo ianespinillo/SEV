@@ -15,6 +15,7 @@ import { CardNoticiaComponent } from './SEV/components/card-noticia/card-noticia
 import { HttpClientModule } from '@angular/common/http';
 import { SignalCard } from './SEV/components/signal/signal.component';
 import { ManualSeñalesComponent } from './SEV/pages/ManualSeñales/ManualSeñales.component';
+import { idCategoryPipe } from './SEV/pipe/categoryId.pipe';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ManualSeñalesComponent } from './SEV/pages/ManualSeñales/ManualSeñal
     NoticiasComponent,
     CardNoticiaComponent,
     ManualSeñalesComponent,
-    SignalCard
+    SignalCard,
+    idCategoryPipe
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,9 @@ import { ManualSeñalesComponent } from './SEV/pages/ManualSeñales/ManualSeñal
   ],
   exports: [
     CardComponent,
-    SignalCard
+    SignalCard,
+    idCategoryPipe
+
   ],
 
   providers: [
