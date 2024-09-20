@@ -39,4 +39,12 @@ export class SignalsService {
 			},
 		});
 	}
+
+	async filterByCategoryId(id: number){
+		return await this.db.signals.findMany({
+			where:{
+				category_id: id
+			}
+		})
+	}
 }

@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './SEV/pages/HomePage/HomePage.component';
 import { NoticiasComponent } from './SEV/pages/Noticias/Noticias.component';
 import { AboutComponent } from './SEV/pages/about/about.component';
-
+import { ManualSeñalesComponent } from './SEV/pages/ManualSeñales/ManualSeñales.component';
+import { EducacionComponent } from './SEV/pages/educacion/educacion.component';
 const routes: Routes = [
   {
     path: 'SEV',
@@ -17,6 +18,14 @@ const routes: Routes = [
     path:'SobreSev',
     component:AboutComponent,
   },
+  {
+    path:'ManualSeñales',
+    component:ManualSeñalesComponent,
+  },
+  // {
+  //   path:'Educacion',
+  //   component:EducacionComponent,
+  // },
   {
     path: '',
     redirectTo: 'SEV',

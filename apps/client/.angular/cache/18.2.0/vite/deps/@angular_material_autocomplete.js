@@ -1,8 +1,11 @@
 import {
   MAT_FORM_FIELD,
   MatFormField
-} from "./chunk-2XC3ROVT.js";
-import "./chunk-QS4VRNNC.js";
+} from "./chunk-OX4F6VW5.js";
+import "./chunk-4X7RBNXX.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-HHUCATVN.js";
 import {
   animate,
   group,
@@ -10,10 +13,7 @@ import {
   style,
   transition,
   trigger
-} from "./chunk-WYFIOXH4.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-PTT77RAH.js";
+} from "./chunk-MW2NBCEV.js";
 import {
   MAT_OPTGROUP,
   MAT_OPTION_PARENT_COMPONENT,
@@ -24,20 +24,28 @@ import {
   MatOptionSelectionChange,
   _countGroupLabelsBeforeOption,
   _getOptionScrollPosition
-} from "./chunk-MF4KT4KO.js";
+} from "./chunk-TXIHZU7Y.js";
+import {
+  Overlay,
+  OverlayConfig,
+  OverlayModule
+} from "./chunk-6ZEIVI73.js";
+import {
+  CdkScrollableModule,
+  ViewportRuler
+} from "./chunk-YT7WTQGE.js";
+import "./chunk-KMHQFHBC.js";
+import {
+  TemplatePortal
+} from "./chunk-FWP72GYV.js";
 import {
   ActiveDescendantKeyManager,
   BreakpointObserver,
   Breakpoints,
   addAriaReferencedId,
   removeAriaReferencedId
-} from "./chunk-TQZH5QTS.js";
-import "./chunk-4NKX7HDD.js";
-import {
-  Overlay,
-  OverlayConfig,
-  OverlayModule
-} from "./chunk-N4QY5BHX.js";
+} from "./chunk-AGVJZCMZ.js";
+import "./chunk-IA7NIZHX.js";
 import {
   DOWN_ARROW,
   ENTER,
@@ -47,25 +55,17 @@ import {
   hasModifierKey
 } from "./chunk-5KX4SCY5.js";
 import {
-  TemplatePortal
-} from "./chunk-YVMYOR2L.js";
-import {
-  CdkScrollableModule,
-  ViewportRuler
-} from "./chunk-2VQCU776.js";
-import "./chunk-GGNV5KE4.js";
-import "./chunk-PUBGCTCP.js";
-import {
   Directionality
-} from "./chunk-G7Q4T3ZD.js";
+} from "./chunk-U7PNNX52.js";
+import "./chunk-P52D2BFY.js";
 import {
   Platform,
   _getEventTarget
-} from "./chunk-3P7ZY3UY.js";
+} from "./chunk-FQLCWTAA.js";
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-GTFYEDR6.js";
+} from "./chunk-WVLOWA2J.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -133,7 +133,7 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-ZI6FIHV7.js";
+} from "./chunk-I2NUWGR4.js";
 
 // ../../node_modules/.pnpm/@angular+material@18.2.2_2dohmcyr7jbs5t4tmr3go6jc3y/node_modules/@angular/material/fesm2022/autocomplete.mjs
 var _c0 = ["panel"];

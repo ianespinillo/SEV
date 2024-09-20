@@ -1,0 +1,6 @@
+<section class="w-full grid gap-4 place-items-center
+  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+  <div *ngFor="let signal of signals">
+    <signal-card [signal]="signal"></signal-card>
+  </div>
+</section>

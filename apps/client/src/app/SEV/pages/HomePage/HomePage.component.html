@@ -1,8 +1,6 @@
-
 <main class="flex flex-col items-center justify-center p-4">
   <!-- Sección 1 -->
   <section id="section1" class="w-full max-w-screen-lg p-4 bg-gray-100 text-center">
-
     <div class="flex flex-col md:flex-row items-center justify-center gap-4">
       <div class="text-center md:text-left">
         <h2 class="text-2xl font-semibold mb-2">
@@ -13,7 +11,7 @@
           prácticas seguras entre todos los usuarios viales.
         </p>
       </div>
-      <img src="assets/Imgs-decoration/Semaforo3D.png" alt="Semáforo 3D" class="w-full md:w-1/2 max-w-md mt-4 md:mt-0">
+      <img src="assets/Imgs-decoration/Semaforo3D.png" alt="Semáforo 3D" class="w-full md:w-1/2 max-w-md mt-4 md:mt-0 object-contain">
     </div>
   </section>
 
@@ -27,22 +25,19 @@
         [textCard]="'Uno de los problemas más comunes es la distracción al volante, especialmente el uso de dispositivos móviles, lo que aumenta significativamente el riesgo de accidentes.'"
         [imgUrl]="'assets/Imgs-decoration/atencion.png'">
       </shared-card>
-  
-      <shared-card [titleCard]="'Conscientizacion'"
-        [textCard]="'La poca o nula conscientizacion que se le da a la seguridad vial genera alrededor de 4.369 segun las estadisticas del ANSV'"
+
+      <shared-card [titleCard]="'Conscientización'"
+        [textCard]="'La poca o nula conscientización que se le da a la seguridad vial genera alrededor de 4.369 accidentes según las estadísticas del ANSV.'"
         [link]="'https://www.argentina.gob.ar/seguridadvial/observatoriovialnacional/estadisticas-observatorio'"
-        [imgUrl]="'assets/Imgs-decoration/mujer-gritando.png'" [textLink]="'estadisticas del ANSV'">
+        [imgUrl]="'assets/Imgs-decoration/mujer-gritando.png'" [textLink]="'estadísticas del ANSV'">
       </shared-card>
-  
-      <shared-card [titleCard]="'Educacion'"
-        [textCard]="'La educacion ya no integra la seguridad vial, la carencia de esta misma no educa a los jovenes peatones, niños, adoslecentes y jovenes adultos.'"
-        [imgUrl]="'assets/Imgs-decoration/libro-3d-tapa-azul-blanco .png'">
+
+      <shared-card [titleCard]="'Educación'"
+        [textCard]="'La educación vial ya no integra la seguridad vial de forma eficaz, lo que afecta a peatones jóvenes y adultos por igual.'"
+        [imgUrl]="'assets/Imgs-decoration/libro-3d-tapa-azul-blanco.png'">
       </shared-card>
     </div>
   </section>
-  
-  
-  
 
   <!-- Sección 3 -->
   <section class="w-full max-w-screen-lg p-4 bg-gray-200 text-center">
@@ -75,6 +70,5 @@
       </div>
     </mat-list>
   </section>
-
-
 </main>
+

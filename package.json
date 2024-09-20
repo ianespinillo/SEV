@@ -12,6 +12,7 @@
     "db:push": "turbo run db:push",
     "db:generate": "turbo run db:generate",
     "db-seed": "turbo run db-seed",
+    "db-reset":"turbo run db-reset",
     "lint:check": "turbo run lint:check",
     "lint:fix": "turbo run lint:fix",
     "lint:format": "turbo run lint:format",
