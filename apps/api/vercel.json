@@ -8,6 +8,12 @@
       "use": "@vercel/node"
     }
   ],
+  "build": {
+    "env": {
+      "NODE_ENV": "production",
+      "NPM_RC": "pnpm"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
